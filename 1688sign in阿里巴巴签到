@@ -1,0 +1,10 @@
+auto.waitFor(); // 文档地址：https://docs.hamibot.com/reference/widgetsBasedAutomation
+//阿里巴巴签到
+
+launchApp('阿里巴巴');
+toast("即将打开");
+while (!click('来领取'));
+toast("领取完毕，即将关闭");
+className("android.widget.Image").text("TB1Y5kbrRFR4u4jSZFPXXanzFXa-124-124.png_110x10000.jpg_").findOne().click()		//关闭
+className("android.widget.Image").text("O1CN010KlO4S24j9uxyAiWK_!!6000000007426-2-tps-96-96.png_110x10000.jpg_").findOne().click()		//返回
+back(),back()
